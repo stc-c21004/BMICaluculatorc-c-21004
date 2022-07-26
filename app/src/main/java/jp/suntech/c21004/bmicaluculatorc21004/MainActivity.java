@@ -70,16 +70,28 @@ public class MainActivity extends AppCompatActivity {
                     }
                     if (bmi < 18.5) {
                         output.setText("低体重(やせ型)");
+                        TextView myText =findViewById(R.id.b02);
+                        myText.setTextColor(getResources().getColor(R.color.myColor3));
                     } else if (bmi < 25) {
                         output.setText("普通体重(適正)");
+                        TextView myText =findViewById(R.id.b02);
+                        myText.setTextColor(getResources().getColor(R.color.myColor));
                     } else if (bmi < 30) {
                         output.setText("肥満(1度)");
+                        TextView myText =findViewById(R.id.b02);
+                        myText.setTextColor(getResources().getColor(R.color.myColor2));
                     } else if (bmi < 35) {
                         output.setText("肥満(2度)");
+                        TextView myText =findViewById(R.id.b02);
+                        myText.setTextColor(getResources().getColor(R.color.myColor1));
                     } else if (bmi < 40) {
                         output.setText("肥満(3度)");
+                        TextView myText =findViewById(R.id.b02);
+                        myText.setTextColor(getResources().getColor(R.color.myColor4));
                     } else {
                         output.setText("肥満(4度)");
+                        TextView myText =findViewById(R.id.b02);
+                        myText.setTextColor(getResources().getColor(R.color.myColor5));
                     }
                     output2.setText("あなたの肥満度は");
                     output3.setText("あなたの適正体重は");
